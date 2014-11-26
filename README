@@ -11,7 +11,7 @@ Installation:
 Descretely hide the shared object generated from compilation. Then, change 
 the LD_PRELOAD environmental variable to the full path of the shared object.
 I'd recommend putting "export LD_PRELOAD=/your/path/here/orly.so" in the
-.bashrc of the honeypot's user.
+.bash_profile of the honeypot's user.
 
 You can modify the list of preapproved applications by editing the 
 "preapproved" array in the source file.
