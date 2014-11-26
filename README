@@ -1,0 +1,17 @@
+Honeypot Owl
+An implementation of the O'RLY Owl seen in this video:
+https://www.youtube.com/watch?v=fPypZSZiF3g
+Mess with hackers on your honeypot by triggering the owl when they attempt to
+run certain applications.
+
+Compilation:
+Compilation should be as simple as "make" on most machines.
+
+Installation:
+Descretely hide the shared object generated from compilation. Then, change 
+the LD_PRELOAD environmental variable to the full path of the shared object.
+I'd recommend putting "export LD_PRELOAD=/your/path/here/orly.so" in the
+.bashrc of the honeypot's user.
+
+You can modify the list of preapproved applications by editing the 
+"preapproved" array in the source file.
